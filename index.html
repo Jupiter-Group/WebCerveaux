@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurorasoft WebHTML 2</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <script src="https://andorraeditor.pages.dev/library/andorra/min/vs/loader.js"></script>
+    <link rel="stylesheet" href="https://aurorasoft.pages.dev/fonts/library.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img id="logo" src="logo-full.png" alt="Logo">
+    <div class="button-container">
+        <button id="openButton">📂</button>
+        <button id="saveButton">💾</button>
+        <button id="previewInNewTab">👁️</button>
+        <button id="help">❓</button>
+        <button id="saveDump">⬇️</button>
+        <select id="lineWrapSelect">
+            <option selected value="off">LW: Off</option>
+            <option value="on">LW: On</option>
+        </select>
+        <select id="minimapSelect">
+            <option value="on">MM: On</option>
+            <option value="off">MM: Off</option>
+        </select>
+    </div>
+    <div id="editor-container">
+        <div id="editor"></div>
+        <div id="divider"></div>
+        <iframe id="preview"></iframe>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
