@@ -1023,6 +1023,10 @@ require(['vs/editor/editor.main'], function () {
         window.open("https://www.google.com")
     });
 
+    document.getElementById('chat').addEventListener('click', function() {
+        window.open("https://www.google.com")
+    });
+
     var divider = document.getElementById('divider');
     var editorContainer = document.getElementById('editor-container');
     var editorElement = document.getElementById('editor');

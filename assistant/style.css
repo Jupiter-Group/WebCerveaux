@@ -1,0 +1,129 @@
+@import url(https://vortixsys.pages.dev/fonts/library.css);
+@import url(https://cdn360.pages.dev/library/rubisco/emoji/3d/RubiscoEmojiColor.css);
+
+:root {
+    --color-base: #f67272;
+    --color-background: #fafafa;
+    --color-gray: #fafafa;
+    --color-border: #f2f2f2;
+    --color-white: #ffffff;
+    --color-input-border: #d6d6d6;
+    --color-font: #1a1a1a;
+    --color-header: #0e266a;
+
+    --font-family-base: "Sevolt UI", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font-family-monospace: "Consolium", "Laurentia Code", SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    --font-family-sans-serif: "Sevolt UI", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font-family-serif: "Virginia", Georgia, 'Times New Roman', Times, serif;
+    --font-family-emoji: "Sevolt Emoji"
+}
+
+body {
+    font-family: var(--font-family-serif), var(--font-family-emoji);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--color-background);
+}
+
+.title-container {
+    color: var(--color-base);
+    text-align: center;
+}
+
+.chat-container {
+    width: 80%;
+    max-width: 800px;
+    height: 90vh;
+    margin-bottom: 30px;
+    background: var(--color-white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-box {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    white-space: pre-wrap;
+}
+
+/* .custom-list {
+    margin: 0;
+    padding-left: 20px;
+    list-style-position: inside;
+}
+
+.custom-list, .custom-list li {
+    margin-bottom: -20px;
+} */
+
+.chat-input {
+    display: flex;
+    border-top: 1px solid var(--color-input-border);
+    padding: 10px;
+}
+
+input {
+    font-family: var(--font-family-base), var(--font-family-emoji);
+    flex: 1;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    font-family: var(--font-family-base), var(--font-family-emoji);
+    padding: 15px;
+    border: none;
+    background: var(--color-base);
+    color: var(--color-white);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.user-message, .bot-message {
+    padding: 12px;
+    border-radius: 8px;
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.user-message {
+    background: var(--color-base);
+    color: var(--color-font);
+    align-self: flex-end;
+}
+
+.bot-message {
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    color: var(--color-font);
+    align-self: flex-start;
+}
+
+pre {
+    background: var(--color-gray);
+    color: var(--color-font);
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: var(--font-family-monospace), var(--font-family-emoji);
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: var(--color-base);
+}
