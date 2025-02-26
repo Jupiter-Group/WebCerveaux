@@ -93,7 +93,7 @@ require(['vs/editor/editor.main'], function () {
         theme: 'WebHTML',
         automaticLayout: true,
         fontSize: 16,
-        fontFamily: `'Laurentia Code', 'Sevolt Emoji Color', monospace`,
+        fontFamily: `'WebCerveaux Mono', 'Sevolt Emoji Color', monospace`,
         scrollBeyondLastLine: true,
         minimap: { enabled: true },
         lineNumbers: 'on',
@@ -891,7 +891,7 @@ require(['vs/editor/editor.main'], function () {
 
     updatePreview();
 
-    const font = new FontFace('Consolium', 'url(https://webhtml.pages.dev/consoli.ttf)');
+    const font = new FontFace('WebCerveaux Mono', 'url(https://webcerveaux.pages.dev/WebCerveauxMono-Regular.ttf)');
 
     font.load().then(() => {
         document.fonts.add(font);
@@ -1020,11 +1020,11 @@ require(['vs/editor/editor.main'], function () {
     });
 
     document.getElementById('help').addEventListener('click', function() {
-        window.open("https://www.google.com")
+        window.open("https://webcerveaux.pages.dev/help")
     });
 
     document.getElementById('chat').addEventListener('click', function() {
-        window.open("https://www.google.com")
+        window.open("https://webcerveaux.pages.dev/assistant/")
     });
 
     var divider = document.getElementById('divider');
